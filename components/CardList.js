@@ -1,15 +1,18 @@
-import { View, Text,FlatList } from "react-native";
+/** @format */
+
+import { View, Text, FlatList } from "react-native";
 import React from "react";
 import data from "./Data";
+import SingleCard from "./SingleCard";
 
 const CardList = () => {
   return (
     <View>
-      <Text>{data[0].id}</Text>
       <FlatList
         data={data}
-        keyExtractor={data => data.id}
-        renderItem={({item}) => <Text>{item.duration}</Text>}
+        keyExtractor={(data) => data.id}
+        renderItem={({ item }) => <SingleCard item={item} />}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );

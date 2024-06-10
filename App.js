@@ -1,7 +1,6 @@
 /** @format */
 
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Cards from "./screens/Cards";
 
 export default function App() {
@@ -15,7 +14,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#0d102d",
     alignItems: "center",
     justifyContent: "center",
   },
