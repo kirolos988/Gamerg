@@ -1,7 +1,8 @@
 /** @format */
 
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 import Cards from "./screens/Cards";
+import styles from "./AppStyling";
 
 export default function App() {
   return (
@@ -10,12 +11,3 @@ export default function App() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#0d102d",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
